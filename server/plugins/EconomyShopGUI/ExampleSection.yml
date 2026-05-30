@@ -43,6 +43,19 @@ fill-item:
   lore:
     - "&8I'm a fill item"
 
+# This acts as a simpler way to add layouts to pages without having to set the 'slot' option for every item,
+# where 0 represents a empty slot filled by either AIR or the fil item configured for this page
+# and 1 represents a slot reserved for a shop item
+item-layout:
+  - '0 0 0 0 0 0 0 0 0'
+  - '0 1 1 1 1 1 1 1 0'
+  - '0 1 1 1 1 1 1 1 0'
+  - '0 1 1 1 1 1 1 1 0'
+  - '0 1 1 1 1 1 1 1 0'
+  - '0 0 0 0 0 0 0 0 0'
+# Note that it is not possible to reserve a slot(setting it to 1) in the bottom row
+# of the item layout when a nav bar for this shop is enabled
+
 # Assign custom click actions when clicking a shop item
 # Possible actions: BUY, SELL, SELL_ALL, GUI_EDITOR
 # Possible click types: LEFT, SHIFT_LEFT, RIGHT, SHIFT_RIGHT, NONE

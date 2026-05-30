@@ -83,7 +83,7 @@ update-checking: true
 #----------------------------------------------DebugMode------------------------------------------------
 
 # Set this value to false to disable debug mode and do not send debug messages to the console.
-debug: false
+debug: true
 
 # When this option is true, nms will be used for item loading and opening shops
 use-nms: true
@@ -391,21 +391,28 @@ main-menu-nav-bar:
       lore:
       - '%translations-money%: &c%player_balance%'
     2:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     3:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     4:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     5:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     6:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     7:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     8:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     9:
-      material: barrier
+      material: ARROW
       name: '%translations-cancel%'
       action: BACK
 
@@ -415,40 +422,43 @@ shops-nav-bar:
   enabled: true
   items:
     1:
-      material: player_head
-      skullowner: '%player_name%'
-      name: '%player_displayname%'
-      lore:
-      - '%translations-money%: &c%player_balance%'
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     2:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     3:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     4:
-      material: red_stained_glass_pane
+      material: ARROW
       name: '%translations-previous-page%'
       action: PAGE_BACK
       paginated:
         enabled: true
         orElse:
-          material: AIR
+          material: GRAY_STAINED_GLASS_PANE
+          name: ' '
     5:
-      material: paper
+      material: NETHER_STAR
       name: '%translations-current-page%'
     6:
-      material: blue_stained_glass_pane
+      material: ARROW
       name: '%translations-next-page%'
       action: PAGE_NEXT
       paginated:
         enabled: true
         orElse:
-          material: AIR
+          material: GRAY_STAINED_GLASS_PANE
+          name: ' '
     7:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     8:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     9:
-      material: barrier
+      material: ARROW
       name: '%translations-back%'
       action: BACK
 
@@ -464,24 +474,35 @@ transaction-screens-nav-bar:
       lore:
       - '%translations-money%: &c%player_balance%'
     2:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     3:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     4:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     5:
       material: REDSTONE_TORCH
       name: '&c&lToggle buying/selling'
       action: TOGGLE_MODE
       onlyEnableForGeyserPlayers: true
+      paginated:
+        enabled: true
+        orElse:
+          material: GRAY_STAINED_GLASS_PANE
+          name: ' '
     6:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     7:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     8:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
     9:
-      material: barrier
+      material: ARROW
       name: '%translations-back%'
       action: BACK
 
@@ -514,7 +535,7 @@ shopstands-transaction-screens-nav-bar:
     8:
       material: air
     9:
-      material: barrier
+      material: ARROW
       name: '%translations-close%'
       action: CLOSE
 
@@ -694,7 +715,7 @@ shift-right-click-sell-all: true
 # For example:
 # When a tool/armor is damaged it cannot be sold to the server by default, if you add the 'Damage' tag to the list below. A damaged item can be sold to the shop
 sold-items-ignored-NBTtags:
-- 'RepairCost'
+- 'repair_cost'
 # The 'RepairCost' tag is added by default since all items that get repaired by anvil/mending will get it, if we don't add it to the ignored list, a item repaired will not be able to be sold to the server
 
 # Set the limit for maximum pages inside a shop section, default is 50 but you can expand it to 100 if needed

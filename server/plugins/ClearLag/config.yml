@@ -15,7 +15,7 @@ config-version: 20
 # -- 'use-internal-tps' Should Clearlag use Spigot's /tps? (Updated by minutes, much slower, but more accurate!)
 settings:
   language: English
-  auto-update: true
+  auto-update: false
   enable-api: true
   use-internal-tps: true
 
@@ -192,7 +192,7 @@ live-time:
   arrowtimer: true
   arrowkilltime: 15
   moblivetime: 600
-  itemlivetime: 240
+  itemlivetime: 2400
 
 #This option disallows the placement of too many tnt-minecarts
 # -- 'radius' is the radius clearlag will check for TNT-Minecarts
@@ -352,7 +352,7 @@ auto-removal:
   enabled: true
   broadcast-message: 'Cleared Entities'
   broadcast-removal: true
-  autoremoval-interval: 460
+  autoremoval-interval: 60
   world-filter:
   # - this_world <-This world will be ignored during removal!
   boat: false
@@ -365,7 +365,78 @@ auto-removal:
   minecart: false
   primed-tnt: true
   item-filter:
-  
+   - LEATHER_HELMET
+   - LEATHER_CHESTPLATE
+   - LEATHER_LEGGINGS
+   - LEATHER_BOOTS
+   - CHAINMAIL_HELMET
+   - CHAINMAIL_CHESTPLATE
+   - CHAINMAIL_LEGGINGS
+   - CHAINMAIL_BOOTS
+   - IRON_HELMET
+   - IRON_CHESTPLATE
+   - IRON_LEGGINGS
+   - IRON_BOOTS
+   - GOLDEN_HELMET
+   - GOLDEN_CHESTPLATE
+   - GOLDEN_LEGGINGS
+   - GOLDEN_BOOTS
+   - DIAMOND_HELMET
+   - DIAMOND_CHESTPLATE
+   - DIAMOND_LEGGINGS
+   - DIAMOND_BOOTS
+   - WOODEN_PICKAXE
+   - WOODEN_AXE
+   - WOODEN_SHOVEL
+   - WOODEN_HOE
+   - STONE_PICKAXE
+   - STONE_AXE
+   - STONE_SHOVEL
+   - STONE_HOE
+   - IRON_PICKAXE
+   - IRON_AXE
+   - IRON_SHOVEL
+   - IRON_HOE
+   - GOLDEN_PICKAXE
+   - GOLDEN_AXE
+   - GOLDEN_SHOVEL
+   - GOLDEN_HOE
+   - DIAMOND_PICKAXE
+   - DIAMOND_AXE
+   - DIAMOND_SHOVEL
+   - DIAMOND_HOE
+   - WOODEN_SWORD
+   - STONE_SWORD
+   - IRON_SWORD
+   - GOLDEN_SWORD
+   - DIAMOND_SWORD
+   - BOW
+   - ARROW
+   - DIAMOND
+   - EMERALD
+   - GOLDEN_INGOT
+   - IRON_INGOT
+   - GOLDEN_NUGGET
+   - LAPIS_LAZULI
+   - REDSTONE
+   - QUARTZ
+   - GLOWSTONE_DUST
+   - DIAMOND_BLOCK
+   - EMERALD_BLOCK
+   - GOLDEN_BLOCK
+   - IRON_BLOCK
+   - LAPIS_BLOCK
+   - REDSTONE_BLOCK
+   - QUARTZ_BLOCK
+   - TOTEM_OF_UNDYING
+   - ELYTRA
+   - NETHER_STAR
+   - SHULKER_SHELL
+   - DRAGON_BREATH
+   - BLAZE_ROD
+   - GHAST_TEAR
+   - MAGMA_CREAM
+
   remove-entities:
     - Arrow onGround
     - Snowball

@@ -104,7 +104,7 @@ cancel: '&4Cancel'
 #Previous/Next/Current page
 previous-page: '&dPrevious Page'
 next-page: '&bNext Page'
-current-page: '&7Page:'
+current-page: '&7Page: %page%/%pages%'
 
 # ShopItem lore
 left-click-buy: \n &a&lBuy Price\n &a■ &f%buyPrice%

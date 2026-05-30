@@ -93,7 +93,7 @@ cancel: "&4Cancelar"
 #Previous/Next/Current page
 previous-page: "&dPagina anterior"
 next-page: "&bSiguiente página"
-current-page: "&7Página:"
+current-page: "&7Página: %page%/%pages%"
 #ShopItem lore
 left-click-buy: "&aClic izquierdo: Comprar: &c%buyPrice%"
 seasonal-buy-price: "&aClick Izquierdo: Comprar: &c&m%buyPrice%&r &a%seasonalBuyPrice%"

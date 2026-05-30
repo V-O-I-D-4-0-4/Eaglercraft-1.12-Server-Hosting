@@ -9,7 +9,7 @@ default_limit: 10
 # they will be unable to combine conflicting enchantments
 #
 # i.e. Protection and Blast Protection can be on the same piece of armour
-allow_unsafe: false
+allow_unsafe: true
 
 # Whether all anvil actions should be capped
 #

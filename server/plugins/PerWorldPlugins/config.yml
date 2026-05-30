@@ -112,3 +112,5 @@ plugins:
   - :ignore
   apollo-folia:
   - :ignore
+  essentialschat:
+  - :ignore

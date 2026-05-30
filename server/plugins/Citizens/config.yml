@@ -1,7 +1,7 @@
 # Citizens Configuration
 
 npc:
-  always-use-name-holograms: false
+  always-use-name-holograms: true
   pathfinding:
     new-finder:
       iterations-per-tick: 5000
@@ -52,7 +52,7 @@ npc:
     # Supported options are: 'teleport to destination' or 'none'
     default-stuck-action: none
     # The default allowed maximum fall distance when pathfinding, set to -1 to use the default value
-    allowed-fall-distance: -1
+    allowed-fall-distance: 2
     # The pathfinder type.
     # Valid options are: CITIZENS, CITIZENS_ASYNC or MINECRAFT.
     # CITIZENS_ASYNC is a new option that is faster but requires more than one processor core and more memory.
@@ -89,8 +89,8 @@ npc:
     npc-cost: 100.0
     # Whether to reset NPC yaw on spawn
     # Currently this is implemented by an arm swing animation due to Minecraft limitations
-    reset-yaw-on-spawn: true
-    enable-scoreboard-teams: true
+    reset-yaw-on-spawn: false
+    enable-scoreboard-teams: false
   chat:
     options:
       bystanders-hear-targeted-chat: false
@@ -175,7 +175,7 @@ npc:
     error-messages:
       maximum-times-used: You have reached the maximum number of uses ({0}).
       missing-item: Missing {1} {0}
-      no-permission: You don't have permission to do that.
+      no-permission: You don't have permission to do that...
       not-enough-experience: You need at least {0} experience.
       not-enough-money: You need at least ${0}.
       on-cooldown: Please wait for {minutes} minutes and {seconds_over} seconds.
